@@ -1,0 +1,5 @@
+"Five Important Considerations for Wireframing" by Lissa Aguilar
+
+Response:
+
+Lissa Aguilar's article on Wireframing does not address the technical aspects of wireframing a website, but rather the important and crucial first steps that you should take before you begin. The first step of course is to KNOW THE PROBLEM! Before diving into the deep end and begin working based purely on your assumptions, first you should ask about the problem and maintain a consistent stream of communication. Otherwise, you'll be grasping at straws and end up wasting a lot of time and work doing something that was not asked of you. Furthermore, it is essential to know the audience so that what you design will fit the image of the company as well as appeal to the target audience. Lastly, it is always good to sketch out your plan so that you can properly portray your vision to your team. 
