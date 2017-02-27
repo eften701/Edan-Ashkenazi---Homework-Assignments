@@ -6,7 +6,7 @@
 
 html{
 	background: url('../img/bg.jpg') no-repeat center center fixed;
-	/* css3 property chack for compatability */
+	/* css3 property check for compatability */
 	background-size: cover;
 }
 
