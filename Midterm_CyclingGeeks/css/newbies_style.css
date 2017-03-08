@@ -1,0 +1,115 @@
+* {
+	font-family: "Helvetica Nue", Arial, sans-serif;
+}
+
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: block;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+.Navigation{
+	display: inline-block;
+	background: lightgrey;
+	width: 100%;
+	height: auto;
+}
+
+.NavBar nav{
+	float: right;	
+	margin: 0;
+}
+
+.NavBar ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.NavBar li{
+	/* float first and thenwe will switch to inline */
+	float: right; 
+	/* use inline */
+	display: inline-block;
+}
+
+.NavBar nav ul{
+	display: inline-block;
+	margin: 0;
+}
+
+.NavBar ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+.NavBar ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+h1{
+	display: block;
+}
+
+
+.NavBar img{
+	display: inline-block;
+	width: 150px;
+	float: left;
+}
+
+.container1{
+	display: inline-block;
+	width:80%;
+	text-align: center;
+	float: right;
+}
+
+.container1 h2{
+	text-align: center;
+}
+
+.container1 img{
+	text-align: center;
+}
+
+.container2{
+	display: inline-block;
+	width:80%;
+	text-align: center;
+	float: right;
+}
+
+.container1, .container2 p{
+	text-align: justify;
+}
+
+.sidebar{
+	display: inline-block;
+	float: top;
+	position: fixed;
+	background-color: rgba(0,150,0,0.5);
+	width: 15%;
+	height: 100%;
+	border: black solid;
+	padding: 20px;
+	padding-top: 5px;
+}
+
+.sidebar h2{
+	text-align: center;
+}
+
+.sidebar li{
+	list-style-type: none;
+}
+.sidebar ul{
+	line-height: 2.0;
+}

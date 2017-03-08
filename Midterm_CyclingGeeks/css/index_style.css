@@ -1,0 +1,117 @@
+		* {
+			font-family: "Helvetica Nue", Arial, sans-serif;
+		}
+
+		.clearfix:before, .clearfix:after{
+			content: " ";
+			display: block;
+		}
+
+		.clearfix:after{
+			clear: both;
+		}
+
+		.clearfix{
+			*zoom: 1;
+		}
+
+		.Navigation{
+			display: inline-block;
+			background: lightgrey;
+			width: 100%;
+			height: auto;
+		}
+
+		.NavBar nav{
+			float: right;
+			margin: 0;
+		}
+
+		.NavBar ul{
+			list-style-type: none;
+			overflow: hidden;
+		}
+
+		.NavBar li{
+      		/* float first and thenwe will switch to inline */
+      		float: right; 
+      		/* use inline */
+      		display: inline-block;
+		}
+
+		.NavBar nav ul{
+			display: inline-block;
+			margin: 0;
+		}
+
+		.NavBar nav ul li{
+			display: inline-block;
+			padding: 20px;
+		}
+
+		.NavBar nav ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		
+
+		h1{
+			display: block;
+		}
+		
+		.container1 h2{
+			text-align: center;
+		}
+
+		.NavBar img{
+			display: inline-block;
+			width: 150px;
+			float: left;
+		}
+
+		p{
+			line-height: 1.5;
+			text-align: justify;
+		}
+
+		h2{
+			text-align: center;
+		}
+
+		div.Container1{
+			display: inline-block;
+			width: 65%;
+			padding: 5px;
+			background-color: yellow;
+			text-align: justify;
+		}
+
+		div.Container1 h3{
+			text-align: center;
+		}
+		
+		div.Container2{
+			display: inline-block;
+			float: right;
+			width: 65%;
+			padding: 5px;
+			text-align: right, justify;
+		}
+
+		div.Container2 h3{
+			text-align: center;
+		}
+
+			div.Container3{
+			display: inline-block;
+			float: left;
+			width: 65%;
+			padding: 5px;
+			text-align: right, justify;
+			background-color: yellow;
+		}
+
+		div.Container3 h3{
+			text-align: center;
+		}
+

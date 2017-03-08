@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Responsive 996 Grid System</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.csssssssssssssssssssssssssss">
+
+	<title>Hero|Jumbotron Tagline Grid | Font Awesome</title>
+
+	<style type="text/css">
+		/* remove margin and padding to get rid of 8px on top left hand corner of browser */
+		body{
+			margin: 0;
+			padding: 0
+			font-family: "Helvetica", Arial, sans-serif;
+		}
+
+		div.hero{
+			width: 100vw;
+			/* make this parent container position relative so we can position absolute or relative over it with a child element */
+			position: relative;
+		}
+
+		.hero img{
+			width: 100%;
+		}
+
+		.hero article{
+			width: 50vw;
+			/* if we want to center it over the image horizonatally, don't use the right property*/
+			/* margin: 0 25vw; */
+			position: absolute;
+			right: 0;
+			top: 75%;
+			color: white;
+			line-height: 1.5;
+			background-color: rgba(100,100,100,0.5);
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+			background: -moz-linear-gradient(left,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%); 
+			/* FF3.6-15 */
+
+			background: -webkit-linear-gradient(left,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%);
+			/* Chrome10-25,Safari5.1-6 */
+
+			background: linear-gradient(to right,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%); 
+			/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+			/* IE6-9 */
+
+		}
+
+		button, a.button{
+			/* for button elements */
+			border: 2px solid black;
+			/* CSS3 you will need browser prefixes! */
+			border-radius: 7px;
+			padding: 5px;
+			line-height: 25px;
+			width: 200px;
+			background-color: #FFF;
+			font-size: 18px;
+			/* Anchor Tags */
+			cursor: pointer;
+			color: black;
+			text-decoration: none;
+			transition: all 0.45s linear;
+		}
+
+		button:hover, 
+		a.button:hover{
+			border-color: white;
+			background-color: black;
+			color: white;
+		}
+		
+		header{
+			width: 100%;
+			background-color: black;
+			color: white;
+			position: fixed;
+			z-index: 100;
+
+			height: 50px;
+			line-height: 50px;
+		}
+
+		nav h1{
+			margin: 0;
+		}
+		
+		nav ul{
+			list-style-type: none;
+
+			line-height: 25px;
+		}
+
+		.grid_4, .grid_6 p{
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+
+<header>
+	<nav class="container clearfix">
+		<h1 class="grid_2">Logo</h1>
+			<ul class="grid_3 prefix_7">
+				<li class="grid_1 alpha"><i class="fa fa-facebook-square fa-2x"></i></li>
+				<li class="grid_1"><i class="fa fa-instagram fa-2x"></i></li>
+				<li class="grid_1 omega">3</li>
+			</ul>
+	</nav>
+</header>
+ <div class="hero">
+ 	<img src="http://placehold.it/600x300/333333/FFFFFF?text=got milk?">
+ 	<article>
+ 		<h1>Selling You Milk</h1>
+ 		<p>This is a paragraph that explains why you NEED milk</p>
+
+ 		<a class="button" href="#">MOOO~</a>
+
+ 		<a class="button" role="button">Quack</a>
+
+ 		<button>Calcuate Yo Shit</button>
+ 	</article>
+ </div>
+
+ <div class="container clearfix">
+ 	<div class="grid_4">
+ 		<p>Embed Audio</p>
+ 	</div>
+ 	<div class="grid_4">
+ 		<p>Embed Audio</p>
+ 	</div>
+ 	<div class="grid_4">
+ 		<p>Embed Audio</p>
+ 	</div>
+</div>
+
+<div class="container clearfix">
+	<div class="grid_6">
+		<p>Embed YouTube</p>
+	</div>
+	<div class="grid_6">
+		<p>Embed Vimeo</p>
+	</div>
+</body>
+</html>
