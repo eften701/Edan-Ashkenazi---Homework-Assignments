@@ -63,64 +63,15 @@
 	float: left;
 }
 
-h1{
-	display: block;
-}
-
-h2{
-	margin: 2%;
-}
-
-p{
-	margin: 2%;
-	text-height: 2.0;
-}
-
 .container1{
 	display: inline-block;
-	width:80%;
-	text-height: 2;
-	text-align: center;
-	float: right;
-}
-
-.container1 h2{
-	text-align: center;
-}
-
-.container2{
-	display: inline-block;
-	width:80%;
-	text-align: center;
-	float: right;
-}
-
-.container1 p, .container2 p{
-	text-align: justify;
-}
-
-.sidebar{
-	display: inline-block;
-	float: top;
-	position: fixed;
-	background-color: rgba(0,150,0,0.5);
-	width: 15%;
-	height: 100%;
-	border: black solid;
-	border-left: none;
-	padding: 20px;
-	padding-top: 5px;
-}
-
-.sidebar h2{
-	text-align: center;
-}
-
-.sidebar p{
-	font-weight: bold;
-	font-size: 20px;
-}
-.sidebar ul{
+	width: 75%;
+	float: left;
 	line-height: 2.0;
-	text-decoration-style: none;
+	text-align: center;s
 }
+
+
+
+
+
