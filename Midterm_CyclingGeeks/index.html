@@ -1,115 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <link rel="stylesheet" type="text/css" href="css/index_style.css">
 <title> Cycling Geeks </title>
-<style type="text/css">
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    max-height: 60px;
-    line-height: 50px;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 5%;
-    margin: 0;
-    position: fixed;
-    top: 0;
-}
-
-header img,
-header h1,
-header nav,
-header nav ul li {
-    display: inline-block;
-}
-
-header img {
-    max-height: 50px;
-    vertical-align: middle;
-}
-
-header h1 {
-    margin: 0;
-    padding: 0;
-}
-
-header nav {
-    float: right;
-}
-
-
-/*from demo*/
-
-nav ul {
-    list-style: none;
-    /*this float kills the container divs wrapping, think using lack of clearfix to our advantage*/
-    float: left;
-}
-
-nav ul li {
-    width: 100px;
-    float: left;
-}
-
-nav ul li:hover {
-    background-color: #AAA;
-}
-
-
-/* make the anchor tags in nav display block for clickability */
-
-nav ul a {
-    display: block;
-    color: #222;
-    text-decoration: none;
-    line-height: 30px;
-    padding: 15px;
-    text-align: center;
-}
-
-
-/* hide sublists by default */
-
-nav ul ul {
-    display: none;
-    background: #DDD;
-}
-
-nav ul li:hover > ul {
-    display: block;
-}
-
-nav ul ul li {
-    width: 300px;
-    padding-left: 10px;
-    overflow: hidden;
-}
-
-nav ul li:hover ul li:hover {
-    background-color: #999;
-}
-
-main{
-	width:90%;
-	margin:0 auto;
-	padding:50px;
-}
-</style>
 
 <body>
     <header class="Navigation">
-        <img src="Images/navbar_image.png" />
+        <a href="index.html"><img src="Images/navbar_image.png"/></a>
         <h1> NYC Cycling Geeks </h1>
         <nav>
             <ul>
  				<li><a href="index.html">Home</a></li>
-                <li><a href="#">Trails</a>
+                <li><a>Trails</a>
                     <ul>
-                        <li><a href="#">A Trail!</a></li>
-                        <li><a href="#">A Trail!</a></li>
+                        <li><a href="Bike Trails/CunninghamPark.html">Cunningham Park</a></li>
+                        <li><a href="Bike Trails/HighBridgePark.html">High Bridge</a></li>
+                        <li><a href="Bike Trails/WolfesPond.html">Wolfe's Pond</a></li>
                     </ul>
                 </li>
                 <li><a href="newbies.html">Newbies</a></li>
@@ -117,19 +23,35 @@ main{
         </nav>
     </header>
     <main>
+
         <h2>About Us</h2>
-        <div class="Container1 clearfix">
+        <div class="Container1">
             <h3>Who We Are</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mi et ipsum ultrices suscipit. Praesent condimentum urna in massa aliquet, sit amet rutrum lorem tincidunt. Quisque faucibus porttitor tellus, sit amet mattis ante porttitor gravida. Fusce fermentum rhoncus tempus. Nullam eu fermentum neque, nec consequat quam. Quisque fermentum metus quis felis fringilla fringilla eget eu nibh. Vestibulum viverra ex vel rutrum hendrerit. Nullam nec lectus vel risus semper lacinia sit amet ac magna.</p>
         </div>
+
+        <div class="Image1">
+            <img src="Images/rsz_who_we_are.jpg">
+        </div>
+
         <div class="Container2">
             <h3>About the Site</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mi et ipsum ultrices suscipit. Praesent condimentum urna in massa aliquet, sit amet rutrum lorem tincidunt. Quisque faucibus porttitor tellus, sit amet mattis ante porttitor gravida. Fusce fermentum rhoncus tempus. Nullam eu fermentum neque, nec consequat quam. Quisque fermentum metus quis felis fringilla fringilla eget eu nibh. Vestibulum viverra ex vel rutrum hendrerit. Nullam nec lectus vel risus semper lacinia sit amet ac magna.</p>
         </div>
+
+        <div class="Image2">
+            <img src="Images/rsz_about_the_site.jpg">
+        </div>
+
         <div class="Container3">
             <h3>NYC Cycling Laws</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et mi et ipsum ultrices suscipit. Praesent condimentum urna in massa aliquet, sit amet rutrum lorem tincidunt. Quisque faucibus porttitor tellus, sit amet mattis ante porttitor gravida. Fusce fermentum rhoncus tempus. Nullam eu fermentum neque, nec consequat quam. Quisque fermentum metus quis felis fringilla fringilla eget eu nibh. Vestibulum viverra ex vel rutrum hendrerit. Nullam nec lectus vel risus semper lacinia sit amet ac magna.</p>
         </div>
+
+        <div class="Image1">
+            <img src="Images/rsz_nyc_laws.jpg">
+        </div>
+
     </main>
 </body>
 
