@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays 101</title>
+
+	<script type="text/javascript">
+
+		var myArray;
+		console.log(myArray);
+		myArray = [];
+		console.log(myArray);
+		console.log(myArray.length);
+
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+
+		console.log(months);
+		console.log(months.length);
+
+		// global variable to store the div element to write to pnce the page has been loaded
+		var el;
+
+		document.addEventListener('DomContentLoaded', function(){
+			el = document.GetElementById('lists') 
+
+				// loop through our months array and log the index number and then the value of the month string stored in that "slot"
+
+				for (var i = 0; i < months.length; i++ ){
+					// do stuff here when true
+					var message = i + " : " + months[i];
+					console.log(message);
+					el.innerHTML += message + '<br>';
+				}
+			});
+
+		// accessing the 4th month in our array
+		console.log(months[3]);
+
+		// remove December from our array of months using Array.pop();
+
+		console.log(months.length);
+		var lastMonth = months.pop();
+		console.log(lastMonth + " was removed from the calendar. The new year is " + months.length + " months long");
+
+		// add Decmeber back to our calendar
+		months.push(lastMonth);
+		
+		console.log(lastMonth + " was added to the end of th calendar. The new year is " + months.length + " months long again");
+	</script>
+</head>
+<body>
+<div id="lists">
+	
+</div>
+</body>
+</html>

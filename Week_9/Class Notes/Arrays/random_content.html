@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Content using an array</title>
+	<script type="text/javascript">
+		var arrImg = [
+		"https://img.buzzfeed.com/buzzfeed-static/static/2015-02/26/15/enhanced/webdr03/enhanced-17126-1424982933-11.jpg","http://i.huffpost.com/gen/2424200/images/o-UNICORN-facebook.jpg", "https://upload.wikimedia.org/wikipedia/commons/8/88/Astronaut-EVA.jpg"
+		];
+
+		var arrLink = [
+			"https://en.wikipedia.org/wiki/Llama",
+			"https://en.wikipedia.org/wiki/Unicorn",
+			"https://en.wikipedia.org/wiki/Astronaut"
+		]
+
+		// random helper finction
+		function randNum(max){
+			var rn = Math.floor(max * Math.random());
+			return rn
+		}
+
+		function loadRandomImage () {
+			var index = randNum(arrImg.length);
+			var img = document.getElementById('dyn-img');
+			var link = document.getElementById('dyn-link');
+			img.src = arrImg[index];
+		}
+
+		function loadRandomImage () {
+			var index = randNum(arrImg.length);
+			var img = document.getElementById('dyn-img');
+			img.src = arrImg[index];
+		}
+
+		document.addEventListener('DOMContentLoaded', loadRandomImage);
+	</script>
+</head>
+<body>
+
+<a href="#" target="_blank" id="dyn-link"><img src="" id="dyn-img"/></a>
+
+</body>
+</html>
