@@ -24,6 +24,7 @@ header h1 {
 }
 
 .Navigation{
+	z-index: 99999999999999999999999;
 	display: inline-block;
 	background: lightgrey;
 	width: 100%;
@@ -172,10 +173,20 @@ h1{
 
 
 .Map{
+	z-index: 9;
 	text-align: center;
+	position: relative;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
+
+.image0{
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	top: 0;
+}
+
 
 button{
 	text-align: center;

@@ -5,6 +5,51 @@
 
 	<title> Cycling Geeks </title>
 
+<head>
+
+<script src="https://use.fontawesome.com/2a723d56f2.js"></script>
+
+<script type="text/javascript">
+
+    var imgArr;
+
+    imgArr = ["https://www.nycgovparks.org/photo_gallery/full_size/23031.jpg", "https://www.google.com/search?q=cunningham+park&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiz5sSy95zTAhUI5IMKHbGTA20Q_AUICigD&biw=1280&bih=726#imgrc=0DoxA7Av9UalUM:", "https://www.nycgovparks.org/photo_gallery/full_size/23030.jpg", "http://www.roydrive.com/assets/images/cunpark/cunninghampark.jpg", "http://www.nycnaturenews.com/wp-content/uploads/2011/12/IMG_4136web.jpg"]; 
+
+    console.log(imgArr[0]);
+
+    function displayImg () {
+        
+        var img = document.createElement("img");
+
+        document.body.appendChild(img);
+
+        var a = document.getElementById('image0');
+        var b = document.getElementById('image1');
+        var c = document.getElementById('image2');
+        var d = document.getElementById('image3');
+        var e = document.getElementById('image4');
+
+        a = imgArr[0];
+        b = imgArr[1];
+        c = imgArr[2];
+        d = imgArr[3];
+        e = imgArr[4];
+
+        img.src = a;
+        img.src = b;
+        img.src = c;
+        img.src = d;
+        img.src = e;
+
+
+    };
+
+
+
+</script>
+
+</head>
+
 <body>
 <header class="Navigation">
         <a href="../index.html"><img src="../Images/navbar_image.png"/></a>
@@ -36,13 +81,21 @@
 	</ul>
 </div>
 
+
 <div class="Map">
 	<img src="../Images/CunnunghamPark_img.png">
 </div>
 
-<!-- <div class="Thumbnail">
-	<a href="#"><p>Gallery</p></a>
-</div> -->
+<button id="image0" onclick="displayImg(imgArr[0])"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></button>
+
+<button id="image1" onclick="displayImg(imgArr[1])"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></button>
+
+<button id="image2" onclick="displayImg(imgArr[2])"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></button>
+
+<button id="image3" onclick="displayImg(imgArr[3])"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></button>
+
+<button id="image4" onclick="displayImg(imgArr[4])"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></button>
+
 
 </main>
 </body>
