@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GSAp Tweening 101</title>
+	<style type="text/css">
+		#sb{
+			position: absolute;
+			top: 500px;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+
+<img src="img/soccer-ball.png" id="sb">
+
+<!-- 5 basketball to bounce in succession -->
+
+<img src="img/basket-ball.png" class="bball">
+<img src="img/basket-ball.png" class="bball">
+<img src="img/basket-ball.png" class="bball">
+<img src="img/basket-ball.png" class="bball">
+<img src="img/basket-ball.png" class="bball">
+
+<!-- load greensock and its plugins -->
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+
+<script type="text/javascript">
+	var sb = document.getElementById('sb');
+
+	// using the TweenMax Class from our animation api to animate over 3 seconds and cahnge the image's location
+
+	// TweenMax.to(element, time in seconds, {options object}, optional delay)
+	// .to will start from current state and tween to desired options
+	// If you use position tweens you have to set the start position and position type in CSS
+	// TweenMax.to(sb, 3, { left:800, top:300 });
+
+	TweenMax.to(sb, 3, { x: 800, y: -500, rotation: 720, scale: 0.5, ease:Elastic.easeOut });
+
+	TweenMax.staggerTo(".bball", 1, {y: 500, rotation: 360, delay:0, ease: Bounce.easeOut }, 0.5);
+
+	TweenMax.to(".bball, #sb", 1, { opacity:0, delay:3, onComplete: imDone });
+
+	function imDone () {
+		alert('I\'m Done Animating');
+	}
+
+
+</script>
+</body>
+</html>
