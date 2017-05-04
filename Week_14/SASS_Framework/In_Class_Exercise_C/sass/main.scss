@@ -1,0 +1,68 @@
+@import "util";
+
+//import this set style sheet after we write our vars and grid
+@import "components/navigation";
+
+
+p{
+	line-height: $baseline;
+	font-size: $baseline;
+	color: $primary-font;
+	margin-bottom: $baseline;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section.visible-grid{
+	@include container();
+	div.wrapper{
+	// optional if you've already used container
+		aside{
+			@include grid-col(3);
+			ul{
+				list-style-type: none;
+				font-size: $baseline;
+				li{
+					height:$baseline*3;
+					background-color: $dark-bg;
+					line-height: $baseline*3
+					border-bottom: $light-bg;
+					transition: all 1s ease;
+					a{
+						color: $light-bg;
+						text-align: center;
+						display: block;
+						text-decoration: none;
+						font-family: $sans;
+						font-weight: $font-weight-light;
+					}
+					&:hover{
+						background-color: darken($dark-bg, 10%);
+					}
+				}
+			}
+		}
+		article{
+			@include grid-col(9);
+			p{
+				color:$primary-font;
+			}
+		}
+	}
+}
+
+section.row-bg{
+	@include grid-row();
+	background: $primary-brand;
+	div.wrapper{
+		@include container();
+		div.grid-demo{
+			@include grid-col(2);
+			&include grid-col(2);
+
+		}
+	}
+}

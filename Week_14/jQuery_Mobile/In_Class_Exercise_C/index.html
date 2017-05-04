@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile</title>
+
+	<style type="text/css">
+		.padded{
+			padding: 1%;
+		}
+	</style>
+</head>
+<body>
+
+<div data-role="page">
+
+<!-- Nav Panel -->
+<div data-role="panel" id="navpanel" data-theme="b" data-display="reveal" data-position="right">
+	<ul data-role="listview" data-corners="false">
+		<li><a href="#" data-role="button" data-rel="close" data-icon="delete" data-iconpos="right">Close</a></li>
+		<li><a href="#">Page 1</a></li>
+		<li><a href="#">Page 2</a></li>
+	</ul>
+</div>
+
+<!-- Star Popup -->
+
+<div data-role="popup" id="star" data-overlay-theme="b" data-theme="b" data-dismissable
+
+<!-- Header with Hamburger Menu -->
+	<div data-role="header" data-theme="b">
+		<h1>Awesome App</h1>
+		<a href="#navpanel" data-role="button" data-icon="bars" data-iconpos="notext" class="ui-btn-right">MENU</a>
+	</div>
+	
+
+
+
+	<div data-role="main" class="padded">
+		<p>Hello main content</p>
+		<input type="text" placeholder="username">
+		<button data-role="button">Click Me</button>
+	</div> 
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#star" data-rel="popup" data-position-to="window" data-transition="flow" data-icon="star">Star</li>
+				<li><a href="#" data-icon="heart">Heart</li>
+				<li><a href="#" data-icon="home">Home</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<script
+  src="https://code.jquery.com/jquery-2.1.4.min.js"
+  integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+  crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</body>
+</html>
