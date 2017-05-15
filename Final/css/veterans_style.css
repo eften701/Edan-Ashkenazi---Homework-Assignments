@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Faster+One|Droid+Serif');
 
 * {
-	font-family: "Helvetica Nue", Arial, sans-serif;
+	font-family: "Arial", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -19,9 +19,10 @@
 	*zoom: 1;
 }
 
-header h1 {
+header h1{
 	font-family: "Permanent Marker", cursive;
 }
+
 
 .Navigation{
 	display: inline-block;
@@ -37,7 +38,7 @@ header {
     width: 100%;
     padding: 0 5%;
     margin: 0;
-    position: fixed;
+/*    position: fixed;*/
     top: 0;
 }
 
@@ -59,6 +60,7 @@ header h1 {
 }
 
 header nav {
+	z-index: 1;
     float: right;
 }
 
@@ -72,6 +74,7 @@ nav ul {
 }
 
 nav ul li {
+	z-index: 1;
     width: 100px;
     float: left;
 }
@@ -84,6 +87,7 @@ nav ul li:hover {
 /* make the anchor tags in nav display block for clickability */
 
 nav ul a {
+	z-index: 1;
     display: block;
     color: #222;
     text-decoration: none;
@@ -101,10 +105,12 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
+	z-index: 1;
     display: block;
 }
 
 nav ul ul li {
+	z-index: 1;
     width: 300px;
     padding-left: 10px;
     overflow: hidden;
@@ -114,14 +120,106 @@ nav ul li:hover ul li:hover {
     background-color: #999;
 }
 
-main{
-	width:90%;
-	margin:0 auto;
-	padding:50px;
-	padding-top: 60px;
-	padding-right: 0;
-	padding-left: 70px;
+
+
+.heading{
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	height: 120px;
+	margin-bottom: 0;
+	color: white;
+	background-image: url('../Images/Veterans-Heading.jpg');
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100 */
+	/*background: rgb(69,72,77);*/ /* Old browsers */
+	/*background: -moz-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);*/ /* FF3.6-15 */
+	/*background: -webkit-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);*/ /* Chrome10-25,Safari5.1-6 */
+/*	background: radial-gradient(ellipse at center, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );*/ /* IE6-9 fallback on horizontal gradient */
 }
+
+.heading h1{
+	padding-top: 40px;
+	font-family: "Faster One", cursive;
+	letter-spacing: 1em;
+	font-size: 2.5em;
+	text-shadow: 2px 2px #ff0000;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    vertical-align: middle;
+    text-align: center;
+    background-color: skyblue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: none;
+    padding-top: 25%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+button.accordion {
+    background-color: skyblue;
+    color: blue;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: skyblue;
+    display: none;
+}
+
+.hamburger{
+	display: none;
+	text-align: right;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.hamburger div{
+	width: 35px;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0;
+}
+
+main{
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+/*	background-color: #1979A7;*/
+}
+
 
 h1{
 	display: block;
@@ -129,78 +227,96 @@ h1{
 
 h2{
 	margin: 2%;
+	font-family: "Droid Serif", Arial;
+	font-size: 
 }
 
 p{
 	margin: 2%;
-	text-height: 2.0;
+	margin-top: 0; 
+	line-height: 2.0;
+	text-align: justify;
+}
+
+a{
+	color: red;
+}
+.container1 ul{
+	margin-left: 2%;
+	margin-top: 2%; 
+	text-align: left;
+	list-style-type: none;
+	line-height: 2.0;
 }
 
 .container1{
-	display: inline-block;
-	width:80%;
-	text-height: 2;
+	z-index: -1;
+}
+
+.heading1{
+	padding-top: 0.5%;
+	padding-bottom: 0.5%; 
+	display: block;
 	text-align: center;
-	float: right;
+	color: white;
+	background-color: #1979A7;
 }
 
+.heading1 h1{
+	font-family: "Permanent Marker", Arial;
+}
 
-.container2{
-	display: inline-block;
-	width:80%;
+footer{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 5%;
+	padding: 5% 0 5% 0;
 	text-align: center;
-	float: right;
+	background-color: lightgrey;
 }
 
-.container1 p, .container2 p{
-	text-align: justify;
-	line-height: 2;
+@media screen and (max-height: 700px) {
+    .sidenav {padding-top: 20%;}
+    .sidenav a {font-size: 25px;}
 }
 
-.sidebar{
-	display: inline-block;
-	float: top;
-	position: fixed;
-	background-color: rgba(0,150,0,0.5);
-	width: 20%;
-	height: 100%;
-	border: black solid;
-	border-left: none;
-	padding: 20px;
-	padding-top: 5px;
-	top: 60px;
+@media only screen and (max-width: 1024px) {
+	.sidnav {
+		padding-top: 20%;
+		line-height: 2.0;
+	}
+	.sidenav a {
+		font-size: 60px;
+		line-height: 2.0;
+	}
 }
 
-.sidebar h2{
-	text-align: center;
-}
+@media only screen and (max-width: 1024px){
+	
+	.Navigation{
+		display: none;
+	}
 
-.sidebar p{
-	font-weight: bold;
-	font-size: 18px;
-}
-.sidebar ul{
-	line-height: 2.0;
-	text-decoration-style: none;
-}
+	.hamburger{
+		display: block;
+	}
 
-
-
-/*@media (min-width: 320px) and (max-width: 400px){ 
+	.sidenav{
+		display: block;
+	}
 
 	p{
-		font-size: 10px;
+		font-size: 14px;
 	}
-	.sidebar{
-	display: inline-block;
-	background-color: rgba(0,150,0,0.5);
-	width: 100%;
-	height: 100%;
-	border: black solid;
-	padding: 20px;
-	padding-top: 5px;
+
+	.container1 li{
+		font-size: 14px;
+	}
+
+	.container1 a{
+		font-size: 14px;
+	}
 }
 
-}
 
-	}*/

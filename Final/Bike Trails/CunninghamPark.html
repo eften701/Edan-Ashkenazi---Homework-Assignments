@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
 <link rel="stylesheet" type="text/css" href="../css/BikeTrails_style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {
+    display:none
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+.w3-container{
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+
+</style>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Graduate');
+
+        .heading{
+            background-image: url(../Images/CunninghamPark-Header.jpg)
+        }
+
+        .heading h1{
+            font-family: 'Graduate', Arial;
+        }
+    </style>
 
 	<title> Cycling Geeks </title>
 
-<head>
-
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
-
-<meta charset='utf-8' />
-    <title></title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
-<style>
-    body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
-
 </head>
 
+
 <body>
-<header class="Navigation">
+    <header class="Navigation">
         <a href="../index.html"><img src="../Images/navbar_image.png"/></a>
         <h1> NYC Cycling Geeks </h1>
         <nav>
             <ul>
- 				<li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="../veterans.html">Veterans</a></li>
                 <li><a>Trails</a>
                     <ul>
@@ -41,31 +61,62 @@
             </ul>
         </nav>
  </header>
+
+ <div class="heading">
+    <h1>Cunningham Park</h1>
+</div>
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="../veterans.html">Veterans</a>
+  <button class="accordion"><a>Trails</a></button>
+  <div class="panel">
+    <a href="CunninghamPark.html">Cunningham</a>
+    <a href="HighBridgePark.html">High Bridge</a>
+    <a href="WolfesPond.html">Wolfe's Pond</a>
+  </div>
+  <a href="../newbies.html">Newbies</a>
+</div>
+
+<span class="hamburger" onclick="openNav()">
+    <div></div>
+    <div></div>
+    <div></div>
+</span>
+
 <main>
 
 <div class="container1">
-	<h1>Cunningham Park</h1>
 	<ul>
+        <!-- All Information Provided by: http://www.nycmtb.com/?page_id=310 -->
 		<li><strong>Bike Type:</strong> Mountain</li>
-		<li><strong>Difficulty:</strong> 33% Begginer, 33% Intermediate, 33% Expert</li>
+		<li><strong>Difficulty:</strong> 33% Noob, 33% Experienced, 33% Veteran</li>
 		<li><strong>Length:</strong> 6.5 miles</li>
 		<li><strong>Location:</strong> Fresh Meadows, Queens, NY</li>
-		<li><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis vestibulum justo, non lacinia lacus congue non. Etiam consectetur sem mattis rhoncus cursus. Sed commodo porta tellus, nec convallis metus convallis quis. Cras tortor ante, egestas venenatis mauris imperdiet, porta aliquet nibh. Quisque id nibh vel tellus feugiat elementum. Ut euismod nulla eu eleifend mollis. Vestibulum consequat ultrices pulvinar. Praesent eu neque dolor. Nam feugiat turpis nec consequat egestas. Cras fringilla erat sit amet imperdiet maximus. Mauris suscipit ultrices hendrerit. Phasellus dictum convallis urna non feugiat.</li>
+		<li><strong>Description:</strong> Cunningham has it all, for riders ranging from absolute beginners to skilled XC’ers in search of a challenge. Cunningham’s trail run the gamut- tight and twisty, technical singletrack, technical rock features and log-overs galore, relative smooth and wide beginner trails (wide enough to pull a baby trailer behind your bike), fast and fun intermediate trails- the only thing it doesn’t have is significant climbing. The total elevation difference in the park is only 40 feet, making the trails perfect for singlespeeders, and the biggest climbs can be cleared with no more than 10 pedal strokes. But don’t let that fool you, Cunningham provides a great workout with constant speed-ups and slow-downs, short and sharp power climbs, and some wide-open, full-speed fast trails. Some have claimed that the Cunningham trails are the most technical on Long Island, and whether you agree with that assessment or not, one thing is certain- Cunningham is fun for everything from a casual cruise with first-time mountain bikers to an all-out hammerfest with the racer crew.</li>
 	</ul>
 </div>
 
-<div id='map'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZWZ0ZW43MDEiLCJhIjoiY2oxZHJldjhnMDBobDJxcGRkZjhxcnk3bSJ9.LYyPDzAsjIhPmiJZKiFg-A';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
-    center: [-77.38, 39], // starting position
-    zoom: 3 // starting zoom
-});
-</script>
+<div class="w3-container">
+
+<div class="w3-content w3-display-container" style="max-width:700px">
+  <img class="mySlides" src="../Images/CunninghamPark-2.jpg" style="width:100%">
+  <img class="mySlides" src="../Images/CunnunghamPark_img.png" style="width:100%;">
+  <iframe class="mySlides" width="700" height="393.75" src="https://www.youtube.com/embed/EmAP_EyT3wI" frameborder="0" allowfullscreen></iframe>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
 
 
 </main>
+
+<script type="text/javascript" src="../js/BikeTrails.js"></script>
+
 </body>
 </html>

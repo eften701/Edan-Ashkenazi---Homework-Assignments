@@ -3,9 +3,47 @@
 
 <link rel="stylesheet" type="text/css" href="../css/BikeTrails_style.css">
 
-	<title> Cycling Geeks </title>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {
+    display:none
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+.w3-container{
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+
+</style>
+
+  <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+        .heading{
+            background-image: url(../Images/HighBridge-Header.jpg)
+        }
+
+        .heading h1{
+            font-family: 'Black Ops One', Arial;
+        }
+    </style>
+</head>
+
+<title> Cycling Geeks </title>
 
 <body>
+
 <header class="Navigation">
         <a href="../index.html"><img src="../Images/navbar_image.png"/></a>
         <h1> NYC Cycling Geeks </h1>
@@ -24,27 +62,62 @@
             </ul>
         </nav>
  </header>
+
+ <div class="heading">
+    <h1>Highbridge Park</h1>
+</div>
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="../veterans.html">Veterans</a>
+  <button class="accordion"><a>Trails</a></button>
+  <div class="panel">
+    <a href="CunninghamPark.html">Cunningham</a>
+    <a href="HighBridgePark.html">High Bridge</a>
+    <a href="WolfesPond.html">Wolfe's Pond</a>
+  </div>
+  <a href="../newbies.html">Newbies</a>
+</div>
+
+<span class="hamburger" onclick="openNav()">
+    <div></div>
+    <div></div>
+    <div></div>
+</span>
+
 <main>
 
 <div class="container1">
-	<h1>High Bridge Park</h1>
 	<ul>
+        <!-- All Information Provided by: http://www.nycmtb.com/?page_id=285 -->
 		<li><strong>Bike Type:</strong> Mountain</li>
-		<li><strong>Difficulty:</strong> 25% Beginner, 25% Intermediate, 50% Expert</li>
+		<li><strong>Difficulty:</strong> 25% Noob, 25% Experienced, 50% Veteran</li>
 		<li><strong>Length:</strong> 3 miles</li>
 		<li><strong>Location:</strong> Washington Heights, Manhattan, NY</li>
-		<li><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis vestibulum justo, non lacinia lacus congue non. Etiam consectetur sem mattis rhoncus cursus. Sed commodo porta tellus, nec convallis metus convallis quis. Cras tortor ante, egestas venenatis mauris imperdiet, porta aliquet nibh. Quisque id nibh vel tellus feugiat elementum. Ut euismod nulla eu eleifend mollis. Vestibulum consequat ultrices pulvinar. Praesent eu neque dolor. Nam feugiat turpis nec consequat egestas. Cras fringilla erat sit amet imperdiet maximus. Mauris suscipit ultrices hendrerit. Phasellus dictum convallis urna non feugiat.</li>
+		<li><strong>Description:</strong> Highbridge confounds expectations. With everything from smooth cruisers to wickedly technical “east coast gnar,” the trails provide a small but entertaining subsample of the best of the regions trails, all within the confines of the densest metropolitan area in North America. Highbridge Park itself straddles the rocky cliff band above Harlem River Drive between 155th Street and Dyckman Street, and the trails use this rocky, cliff-strewn terrain to their advantage… routing beginner riders through the shadow of hulking rock cliffs, and taking expert riders up, down and across the steep and challenging cliffside. In addition to the XC trails, Highbridge also features the Hellfighter freeride trail, with terrain that includes drops, berms, steeps, rock gardens and other challenging features built to test your skills.(designed and built in conjunction with pro rider Jim Dellavalle and the Brooklyn Bike Riders). But the most-used feature of Highbridge Park is the dirt jump park, designed and built by IMBA Trailsolutions with current and former pro riders Judd DeVall, Jeff Lenosky and Kyle Ebbett. The Highbridge jumps begin with a pump track and a flow-line with beginner level jumps. The progressive intermediate section develops into a mini slopestyle inspired course with multiple tables, step up/downs and berms. While the XC trails are a bit short to ride as a destination, they’re perfect for city residents looking for a local spin and riders out to sample a bit of everything- jumps, drops and trail riding all in one place,  just blocks from the #1 train.</li>
 	</ul>
 </div>
 
-<div class="Map">
-	<img src="../Images/highbridge-trail-map.gif">
+<div class="w3-container">
+
+<div class="w3-content w3-display-container" style="max-width:700px">
+  <img class="mySlides" src="../Images/HighBridge-1.jpg" style="width:100%">
+  <img class="mySlides" src="../Images/HighBridgePark-map.gif" style="width:100%;">
+  <iframe class="mySlides" width="700" height="393.75" src="https://www.youtube.com/embed/twJnRiL504I" frameborder="0" allowfullscreen></iframe>
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
 </div>
 
-<!-- <div class="Thumbnail">
-	<a href="#"><p>Gallery</p></a>
-</div> -->
-
 </main>
+
+<script type="text/javascript" src="../js/BikeTrails.js"></script>
+
 </body>
 </html>

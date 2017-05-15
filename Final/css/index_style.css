@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Bangers');
 
 * {
-	font-family: "Helvetica Nue", Arial, sans-serif;
+	font-family: "Arial", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -38,7 +38,7 @@ header {
     width: 100%;
     padding: 0 5%;
     margin: 0;
-    position: fixed;
+/*    position: fixed;*/
     top: 0;
 }
 
@@ -115,11 +115,27 @@ nav ul li:hover ul li:hover {
     background-color: #999;
 }
 
+.heading{
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	height: 120px;
+	margin-bottom: 0;
+	background-image: url("../Images/Home-Heading.jpg");
+}
+
+.heading h1{
+	padding-top: 40px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 0.2em;
+	font-size: 3em;
+}
+
 main{
 	width:90%;
 	margin:0 auto;
-	padding:50px;
-	padding-top: 60px;
+/*	padding:50px;*/
+	padding-top: 0;
 }
 
 h1{
@@ -136,26 +152,39 @@ p{
 }
 
 h2{
+	display: block;
 	text-align: center;
 	margin: 25px;
+	margin-bottom: 20px; 
+}
+
+div.float_left{
+	display: inline-block;
+	float: left;
+	width: 58%;
+}
+
+div.float_right{
+	display: inline-block;
+	float: right;
+	width: 58%;
 }
 
 div.Container1{
-	display: inline-block;
+	display: block;
 	float: left;
-	width: 55%;
-	padding: 10px;
+	width: 100%;
+	padding-top: 2%;
+	/*padding: 10px;
 	padding-left: 0;
 	padding-top: 20px;
-	padding-bottom: 0px;
-	text-align: justify;
+	padding-bottom: 0px;*/
 }
 
 .Image1{
 	display: inline-block;
 	float: right;
 	box-sizing: border-box;
-	margin-top: 20px;
 }
 
 div.Container1 h3{
@@ -163,13 +192,14 @@ div.Container1 h3{
 }
 
 div.Container2{
-	display: inline-block;
+	display: block;
 	float: right;
-	width: 55%;
-	padding: 10px;
+	width: 100%;
+	padding-top: 2%;
+	/*padding: 10px;
 	padding-right: 0;
 	padding-top: 20px;
-	padding-bottom: 0px;
+	padding-bottom: 0px;*/
 	text-align: right, justify;
 }
 
@@ -181,17 +211,17 @@ div.Container2 h3{
 	display: inline-block;
 	float: left;
 	box-sizing: border-box;
-	padding-top: 25px;
 }
 
 div.Container3{
 	display: inline-block;
 	float: left;
-	width: 55%;
-	padding: 10px;
+	width: 100%;
+	padding-top: 2%;
+	/*padding: 10px;
 	padding-left: 0;
 	padding-top: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 20px;*/
 	text-align: right, justify;
 }
 
@@ -203,22 +233,157 @@ div.Container3 h3{
 	display: inline-block;
 	float: right;
 	box-sizing: border-box;
-	margin-top: 40px;
+	margin-top: 0;
 }
 
-/*@media (min-width: 320px) { 
+/* w3 Schools */
+/** w3 Schools */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    vertical-align: middle;
+    text-align: center;
+    background-color: skyblue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: none;
+    padding-top: 25%;
+}
 
-	div.Container1{
-	display: inline-block;
-	width: 100%;
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+button.accordion {
+    background-color: skyblue;
+    color: blue;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: skyblue;
+    display: none;
+}
+
+.hamburger{
+	display: none;
+	text-align: right;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.hamburger div{
+	width: 35px;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 700px) {
+    .sidenav {padding-top: 20%;}
+    .sidenav a {font-size: 25px;}
+}
+
+@media only screen and (max-width: 1024px) {
+	.sidnav {
+		padding-top: 20%;
+		line-height: 2.0;
+	}
+	.sidenav a {
+		font-size: 60px;
+		line-height: 2.0;
+	}
+}
+
+@media only screen and (max-width: 1024px){ 
+
+	div.float_left{
+		float: none;
+	}
+	
+	div.float_right{
+		float: none;
+	}
+
+	.Navigation{
+		display: none;
+	}
+
+	.heading{
+		text-align: left;
+		padding-left: 8%;
 	}
 
 	.Image1{
-	text-align: center;
-	display: block;
-	box-sizing: border-box;
-	margin-top: 5px;
+		float: none;
+	}
+
+	.Image2{
+		float: none;
+	}
+
+	.Image3{
+		float: none;
+	}
+
+	main{
+		width: 100%;
+		text-align: center;
+	}
+	
+	h2{
+		display: none;
+	}
+
+	h3{
+		margin: 0 0 2% 0;
+	}
+
+	.sidenav{
+		display: block;
+	}
+
+	.span{
+		display: none;
+	}
+
+	#main{
+    	transition: margin-left .5s;
+	}
+
+	.hamburger{
+		display: inline-block;
+		padding-bottom: 0;
+	}
+
 }
 
-	}*/
 

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Love+Ya+Like+A+Sister');
 
 * {
-	font-family: "Helvetica Nue", Arial, sans-serif;
+	font-family: "Arial", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -19,9 +19,10 @@
 	*zoom: 1;
 }
 
-header h1 {
+header h1{
 	font-family: "Permanent Marker", cursive;
 }
+
 
 .Navigation{
 	display: inline-block;
@@ -37,7 +38,7 @@ header {
     width: 100%;
     padding: 0 5%;
     margin: 0;
-    position: fixed;
+/*    position: fixed;*/
     top: 0;
 }
 
@@ -114,13 +115,26 @@ nav ul li:hover ul li:hover {
     background-color: #999;
 }
 
+.heading{
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	height: 120px;
+	margin-bottom: 0;
+	background-image: url('../Images/Noobs-Heading.jpg');
+}
+
+.heading h1{
+	padding-top: 37px;
+	font-family: 'Love Ya Like A Sister', cursive;
+	letter-spacing: 0.2em;
+	font-size: 2.5em;
+	text-shadow: 1px 1px #20A6E7;
+}
+
 main{
 	width:90%;
 	margin:0 auto;
-	padding:50px;
-	padding-top: 60px;
-	padding-right: 0;
-	padding-left: 70px;
 }
 
 h1{
@@ -139,9 +153,9 @@ p{
 .container1{
 	display: inline-block;
 	width:80%;
-	text-height: 2;
 	text-align: center;
-	float: right;
+	float: left;
+	left: 0;
 }
 
 
@@ -149,26 +163,32 @@ p{
 	display: inline-block;
 	width:80%;
 	text-align: center;
-	float: right;
+	float: left;
 }
 
 .container1 p, .container2 p{
 	text-align: justify;
 	line-height: 2;
+	padding-right: 5%;
+}
+
+.container1 img, .container2 img{
+	padding-right: 2%;
 }
 
 .sidebar{
+	z-index: -1;
 	display: inline-block;
-	float: top;
 	position: fixed;
 	background-color: rgba(0,150,0,0.5);
 	width: 20%;
 	height: 100%;
 	border: black solid;
-	border-left: none;
+	border-right: none;
 	padding: 20px;
 	padding-top: 5px;
-	top: 60px;
+	float: right;
+	right: 0;
 }
 
 .sidebar h2{
@@ -184,21 +204,135 @@ p{
 	text-decoration-style: none;
 }
 
-/*@media (min-width: 320px) and (max-width: 400px){ 
+a{
+	color: blue;
+}
 
-	p{
-		font-size: 10px;
-	}
-	.sidebar{
-	display: inline-block;
-	background-color: rgba(0,150,0,0.5);
-	width: 100%;
-	height: 100%;
-	border: black solid;
+/** w3 Schools */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    vertical-align: middle;
+    text-align: center;
+    background-color: skyblue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: none;
+    padding-top: 25%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display: block;
+    transition: 0.3s
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+button.accordion {
+    background-color: skyblue;
+    color: blue;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: skyblue;
+    display: none;
+}
+
+.hamburger{
+	display: none;
+	text-align: right;
 	padding: 20px;
-	padding-top: 5px;
+	cursor: pointer;
 }
 
+.hamburger div{
+	width: 35px;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0;
 }
 
-	}*/
+@media screen and (max-height: 700px) {
+    .sidenav {padding-top: 20%;}
+    .sidenav a {font-size: 25px;}
+}
+
+@media only screen and (max-width: 1024px) {
+	.sidnav {
+		padding-top: 20%;
+		line-height: 2.0;
+	}
+	.sidenav a {
+		font-size: 60px;
+		line-height: 2.0;
+	}
+}
+
+@media only screen and (max-width: 1024px){ 
+
+	.Navigation{
+		display: none;
+	}
+
+	.heading{
+		text-align: left;
+		padding-left: 2%;
+	}
+
+	.container1 h2{
+		padding-right: 7%;
+	}
+
+	.container2 h2{
+		padding-right: 7%;
+	}
+	
+	.container1 img{
+		padding-right: 5%;
+	}
+	.container2 img{
+		padding-right: 5%;
+	}
+
+	.sidenav{
+		display: block;
+	}
+
+	.span{
+		display: none;
+	}
+
+	#main{
+    	transition: margin-left .5s;
+	}
+
+	.hamburger{
+		display: inline-block;
+		padding-bottom: 0;
+	}
+
+	}
