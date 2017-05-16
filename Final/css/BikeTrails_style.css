@@ -236,14 +236,14 @@ h1{
 }
 
 @media only screen and (max-width: 1024px) {
-	.sidnav {
-		padding-top: 20%;
-		line-height: 2.0;
-	}
-	.sidenav a {
-		font-size: 60px;
-		line-height: 2.0;
-	}
+    .sidnav {
+        padding-top: 20%;
+        line-height: 2.0;
+    }
+    .sidenav a {
+        font-size: 22px;
+        line-height: 2.0;
+    }
 }
 @media only screen and (max-width: 1024px){
 	
@@ -263,12 +263,12 @@ h1{
 		top: 0;
 	}
 
-    .mapboxgl-map{
-        display:  none;
+    .heading h1{
+        font-size: 1em;
     }
 
-    #map{
-       display: none;
+    iframe{
+        max-width: 300px;
     }
 
     .img{
