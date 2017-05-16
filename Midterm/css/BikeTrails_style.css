@@ -171,47 +171,8 @@ h1{
 	text-align: center;
 }
 
-
-.Map{
-	z-index: 9;
-	text-align: center;
-	position: relative;
-	margin-top: 2%;
-	margin-bottom: 2%;
-}
-
-.image0{
-	display: block;
-	position: absolute;
-	z-index: 99999;
+.heading{
 	top: 0;
-}
-
-
-button{
-	text-align: center;
-}
-
-.Thumbnail{
-	box-sizing: border-box;
-	display: block;
-	text-align: center;
-	margin-top: 2%;
-	margin-left: 46%;
-	margin-right: 46%;
-	border: black solid 1px;
-	padding: 10px 10px 10px 10px;
-	background-color: blue;
-}
-
-.Thumbnail a{
-	text-decoration: none;
-	text-align: center;
-	color: white;
-}
-
-.Thumbnail p{
-	font-size: 20px;
 }
 
 

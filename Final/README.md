@@ -1,3 +1,3 @@
-[NYC Cycling Geeks](http://sites.bxmc.poly.edu/~edanashkenazi/nyccyclinggeeks/)
+[NYC Cycling Geeks](http://sites.bxmc.poly.edu/~edanashkenazi/WebDevFinal/)
 
-[Documentation](http://sites.bxmc.poly.edu/~edanashkenazi/WebDev/index.php/2017/03/19/midterm-documentation/)
+[Documentation](http://sites.bxmc.poly.edu/~edanashkenazi/WebDev/wp-admin/post.php?post=71&action=edit)
