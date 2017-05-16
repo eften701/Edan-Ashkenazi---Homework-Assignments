@@ -231,13 +231,13 @@ h1{
 }
 
 @media screen and (max-height: 700px) {
-    .sidenav {padding-top: 20%;}
-    .sidenav a {font-size: 25px;}
+    .sidenav {padding-top: 5%;}
+    .sidenav a {font-size: 22px;}
 }
 
 @media only screen and (max-width: 1024px) {
-    .sidnav {
-        padding-top: 15%;
+    .sidenav {
+        padding-top: 10%;
         line-height: 2.0;
     }
     .sidenav a {

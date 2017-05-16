@@ -335,4 +335,12 @@ div.panel {
 		padding-bottom: 0;
 	}
 
+	.sidebar li{
+		margin-top: 10%;
+	}
+
+	.sidebar p{
+		margin-top: 10%;
+	}
+
 	}
